@@ -1,109 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'KARLA', sans-serif;
+    color: #333;
+    background-color: #fff;
 }
-
-header {
-    height: 335px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+img {
+display: block;
 }
-header img {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
+h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    white-space: nowrap;
 }
-header h1 {
-    color: white;
-    font-size: 65px;
-    font-weight: 300;
-    text-align: center;
-    position:relative;
-    z-index: 1;
+h2 span {
+    color: #ff4b5c;
 }
-header span {
-    font-weight: bold;
-}
-main section {
-    max-width: 1050px;
-    margin: auto;
-    padding: 60px 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-main section img {
-    width: 350px;
-    height: 235px;
-    object-fit: cover;
-}
-main section div {
-    flex: 1;
-}
-main section h2 {
-    font-size: 25px;
-    line-height: 1.4;
-    margin-bottom: 8px;
-}
-main section h2 span {
-    color: #ED5268;
-}
-main section p {
-    font-size: 11px;
-    line-height: 1.7;
-    margin-bottom: 15px;
-    max-width: 350;
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 button {
-    background: #F34E67;
-    color: white;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 180px;
+    height: 48px;
+    background-color: #FF4b5c;
+    color: #fff;
     border: none;
-    border-radius: 26px;
-    padding: 10px 28px;
-    font-size: 9px;
+    border-radius: 25px;
     cursor: pointer;
 }
-main section :nth-child(3) img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-footer {
-    background: linear-gradient(110deg,#FF4961, #F51C65);
-    color: white;
-    padding: 40px 10%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-footer div h4 {
-    font-size: 10px;
-    margin-bottom: 15px;
-}
-footer div a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 9px;
-    margin-bottom: 8px;
+header {
+    position: relative;  
 }
 
-.festival{
-    background-image:  url("../accents/images/wesley.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+header .concierto {
     width: 100%;
-    min-height: 450px;
-    align-items: center;
-    justify-content: flex-end;
-    box-sizing: border-box;
+    height: auto;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1;
+    font-size: 10.5vw;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+}
+
+header h1 span{
+    font-size: 1.14em;
+    font-weight: 400;
+    color: #fff;
+}
+main  {padding-top: 100px;
+}
+.musica,
+.louder {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
     display: flex;
-    padding: 40px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+.musica div,
+.louder div {
+    width: 470px;
+}
+.musica img,
+.louder img {
+    width: 400px;
+    height: auto;
+    box-shadow: 0 20px 40px rgba(0,0,0, 0.35);
+}
+.festival {height: 600px;
+    background: url(../accents/images/raptis.png) center / cover no-repeat;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8%;
+    display: flex;
+}
+.festival div {
+    width: 490px;
+}
+.festival h2,
+.festival p {
+    color: #fff;
+}
+footer {
+    background: linear-gradient(135deg,#ff4b5c 0%, #ff4f5e 55%, #ff2a5f 100%);
+    color: #fff;
+    padding: 65px 5% 30px;
+}
+.columnas {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 120px 40px;
+    display: grid;
+    grid-template-columns: 231px 231px 231px auto;
+    justify-content: space-between;
+}
+.columnas h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 40px;
+}
+.columnas p,
+.columnas a {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.derechos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 27px;
+    border-top: 1px solid rgab(255,255,255,0.3);
+    display: flex;
+    justify-content: space-between;
+    }
+    .derechos p {
+    font-size: 13px;
+    margin-bottom: 0;
 }
